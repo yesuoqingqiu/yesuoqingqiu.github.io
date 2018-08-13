@@ -82,13 +82,11 @@
 
 
 
-<meta name="description" content="MBR和GPT分区的区别MBR分区MBR的意思是“主引导记录”，是IBM公司早年间提出的。它是存在于磁盘驱动器开始部分的一个特殊的启动扇区。这个扇区包含了已安装的操作系统系统信息，并用一小段代码来启动系统。如果你安装了Windows，其启动信息就放在这一段代码中——如果MBR的信息损坏或误删就不能正常启动Windows，这时候你就需要找一个引导修复软件工具来修复它就可以了。Linux系统中MBR">
 <meta name="keywords" content="装机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows系统安装教程">
 <meta property="og:url" content="https://ysqq.coding.me/2018/08/10/装机教程/index.html">
 <meta property="og:site_name" content="寒夜锁清秋">
-<meta property="og:description" content="MBR和GPT分区的区别MBR分区MBR的意思是“主引导记录”，是IBM公司早年间提出的。它是存在于磁盘驱动器开始部分的一个特殊的启动扇区。这个扇区包含了已安装的操作系统系统信息，并用一小段代码来启动系统。如果你安装了Windows，其启动信息就放在这一段代码中——如果MBR的信息损坏或误删就不能正常启动Windows，这时候你就需要找一个引导修复软件工具来修复它就可以了。Linux系统中MBR">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7f09c305gy1fu4i3o42rgj23r72i54qp.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7f09c305gy1fu4i4unlvpj20ua0llgmx.jpg">
@@ -96,10 +94,9 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7f09c305gy1fu4is5l6cmj20p60hkk7b.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7f09c305gy1fu4iu5tuaqj20p30ir499.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7f09c305gy1fu4j2w82x1j23341qg4qp.jpg">
-<meta property="og:updated_time" content="2018-08-10T07:03:46.435Z">
+<meta property="og:updated_time" content="2018-08-13T08:06:52.109Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows系统安装教程">
-<meta name="twitter:description" content="MBR和GPT分区的区别MBR分区MBR的意思是“主引导记录”，是IBM公司早年间提出的。它是存在于磁盘驱动器开始部分的一个特殊的启动扇区。这个扇区包含了已安装的操作系统系统信息，并用一小段代码来启动系统。如果你安装了Windows，其启动信息就放在这一段代码中——如果MBR的信息损坏或误删就不能正常启动Windows，这时候你就需要找一个引导修复软件工具来修复它就可以了。Linux系统中MBR">
 <meta name="twitter:image" content="http://ww1.sinaimg.cn/large/7f09c305gy1fu4i3o42rgj23r72i54qp.jpg">
 
 
@@ -399,6 +396,7 @@
 
       
         <p><img src="http://ww1.sinaimg.cn/large/7f09c305gy1fu4i3o42rgj23r72i54qp.jpg" alt=""></p>
+<a id="more"></a>
 <h2 id="MBR和GPT分区的区别"><a href="#MBR和GPT分区的区别" class="headerlink" title="MBR和GPT分区的区别"></a>MBR和GPT分区的区别</h2><h3 id="MBR分区"><a href="#MBR分区" class="headerlink" title="MBR分区"></a>MBR分区</h3><p>MBR的意思是“主引导记录”，是IBM公司早年间提出的。它是存在于磁盘驱动器开始部分的一个特殊的启动扇区。这个扇区包含了已安装的操作系统系统信息，并用一小段代码来启动系统。如果你安装了Windows，其启动信息就放在这一段代码中——如果MBR的信息损坏或误删就不能正常启动Windows，这时候你就需要找一个引导修复软件工具来修复它就可以了。Linux系统中MBR通常会是GRUB加载器。MBR。当一台电脑启动时，它会先启动主板自带的BIOS系统，bios加载MBR，MBR再启动Windows，这就是mbr的启动过程。</p>
 <h3 id="GPT分区"><a href="#GPT分区" class="headerlink" title="GPT分区"></a>GPT分区</h3><p>GPT的意思是GUID Partition Table，即“全局唯一标识磁盘分区表”。他是另外一种更加先进新颖的磁盘组织方式，一种使用UEFI启动的磁盘组织方式。最开始是为了更好的兼容性，后来因为其更大的支持内存（mbr分区最多支持2T的磁盘），更多的兼容而被广泛使用，特别是苹果的MAC系统全部使用gpt分区。gtp不在有分区的概念，所有CDEF盘都在一段信息中存储。可以简单的理解为更先进但是使用不够广泛的技术。因为兼容问题，gpt其实在引导的最开始部分也有一段mbr引导，也叫做“保护引导”，为了防止设备不支持uefi 区别。</p>
 <h3 id="储存空间"><a href="#储存空间" class="headerlink" title="储存空间"></a>储存空间</h3><p>mbr最多支持2T，而gpt理论上是无限制的。</p>

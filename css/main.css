@@ -1950,7 +1950,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e83839;
+  background: #24b5ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3122,4 +3122,5 @@ body {
   background: url("http://ww1.sinaimg.cn/large/7f09c305gy1fu86h9kzwcj23h02bcqv8.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: auto;
 }

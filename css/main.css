@@ -1950,7 +1950,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff37ff;
+  background: #1a3ddd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3117,10 +3117,4 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
-}
-body {
-  background: url("http://ww1.sinaimg.cn/large/7f09c305gy1fu877lbfwuj21hc0u0478.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
 }
